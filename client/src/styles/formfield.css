@@ -1,0 +1,48 @@
+.form-field {
+  display: flex;
+  align-items: center;
+  gap: 2;
+  margin-bottom: 0.5rem;
+}
+
+.form-field-label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.form-btn {
+  display: inline-block;
+  background-color: var(--secondry-color);
+  color: white;
+  padding: 0.2rem;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  margin-left: 0.5rem;
+}
+
+.form-btn:hover {
+  background-color: #6469ffec;
+}
+
+.form-input-field {
+  width: 100%;
+  height: 2.5rem;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+@media (min-width: 700px) {
+  .form-input-field {
+    width: 50%;
+    height: 2.5rem;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+}

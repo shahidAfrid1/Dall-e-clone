@@ -1,0 +1,145 @@
+.post-hero {
+  text-align: center;
+}
+
+.post-hero h1 {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.post-hero h1 span {
+  color: var(--secondry-color);
+}
+
+.post-hero p {
+  color: #666e75;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+}
+
+.form-create-img {
+  margin-top: 3rem;
+}
+
+@media (min-width: 900px) {
+  .post-hero {
+    padding: 1rem 10rem;
+  }
+  .post-hero h1 {
+    font-size: 3rem;
+  }
+
+  .post-hero p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .form-create-img {
+    margin-top: 4rem;
+    margin-left: 3rem;
+  }
+}
+
+.preview {
+  position: relative;
+  background-color: #f9fafb;
+  border: 1px solid #d1d5db;
+  color: #1f2937;
+  font-size: 14px;
+  border-radius: 0.375rem;
+  outline-color: #3b82f6;
+  outline-width: 2px;
+  width: 100%;
+  padding: 0.75rem;
+  height: 16rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.preview-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.preview-img-icon {
+  width: 75%;
+  height: 75%;
+  object-fit: contain;
+  opacity: 0.4;
+}
+
+.preview-loader {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.375rem;
+}
+
+@media (min-width: 700px) {
+  .preview {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
+.buttons {
+  margin-top: 1rem;
+}
+
+.buttons button {
+  width: 100%;
+  height: 2.5rem;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.generate-btn {
+  background: rgb(1, 138, 1);
+}
+
+.submit-btn {
+  background: var(--secondry-color);
+}
+.buttons {
+  margin-bottom: 2rem;
+}
+
+.buttons p {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #666e75;
+}
+
+.buttons p span {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+@media (min-width: 900px) {
+  .buttons {
+    margin-top: 2rem;
+    margin-left: 3rem;
+  }
+
+  .buttons button {
+    width: 20rem;
+  }
+
+  .buttons p {
+    font-size: 1.5rem;
+  }
+}
