@@ -129,7 +129,7 @@
   font-weight: 500;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 700px) {
   .buttons {
     margin-top: 2rem;
     margin-left: 3rem;

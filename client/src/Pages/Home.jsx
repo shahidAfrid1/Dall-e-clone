@@ -28,8 +28,8 @@ const Home = () => {
             "Content-Type": "application/json",
           },
         });
-
-        if (response.statusText === "OK") {
+        console.log(response);
+        if (response.status === 200) {
           setAllPosts(response.data.data.reverse());
         }
       } catch (error) {
@@ -85,7 +85,7 @@ const Home = () => {
 
       <div>
         {isLoading ? (
-          <div>
+          <div className="loader">
             <Loader />
           </div>
         ) : (

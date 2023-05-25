@@ -82,3 +82,11 @@
     grid-row: 1 / span 2;
   }
 }
+
+.loader {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
