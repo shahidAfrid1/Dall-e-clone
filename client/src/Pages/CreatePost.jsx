@@ -33,9 +33,10 @@ const CreatePost = () => {
             },
           }
         );
-        console.log(response);
+
         navigate("/");
       } catch (error) {
+        console.log(error);
         alert(error);
       } finally {
         setIsLoading(false);
@@ -76,7 +77,7 @@ const CreatePost = () => {
           image: `data:image/jpeg;base64,${response.data.image}`,
         });
       } catch (error) {
-        alert(error);
+        console.log(error);
       } finally {
         setGeneratingImg(false);
       }

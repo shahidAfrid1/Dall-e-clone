@@ -28,11 +28,11 @@ const Home = () => {
             "Content-Type": "application/json",
           },
         });
-        console.log(response);
         if (response.status === 200) {
           setAllPosts(response.data.data.reverse());
         }
       } catch (error) {
+        console.log(error);
         alert(error);
       } finally {
         setIsLoading(false);
@@ -67,8 +67,8 @@ const Home = () => {
         </h1>
 
         <p>
-          Generate images by using create button and and upload images to
-          showcase your creativity to the world
+          Generate images by using create button and upload images them to
+          showcase your creativity to the world.
         </p>
       </div>
 
