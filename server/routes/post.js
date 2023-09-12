@@ -23,6 +23,7 @@ router.route("/").post(async (req, res) => {
     const { name, prompt, image } = req.body;
     const imageUrl = await cloudinary.uploader.upload(image, {
       quality: 50,
+      format: "jpg",
     });
 
     const newPost = await Post.create({
